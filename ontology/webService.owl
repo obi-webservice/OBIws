@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obi.owl#"
-     xml:base="http://purl.obolibrary.org/obo/obi.owl"
-     xmlns:webService="http://purl.obolibrary.org/obo/webService.owl#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obi/dev/webService.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obi/dev/webService.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
@@ -15,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/webService.owl">
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-        <owl:imports rdf:resource="http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-01-18/merged/obi_woIEDB_comments.owl"/>
+        <owl:imports rdf:resource="http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-03-29/merged/merged-all.owl"/>
     </owl:Ontology>
     
 
