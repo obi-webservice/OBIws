@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1333469340406" name="http://purl.obolibrary.org/obo/obi/dev/webService.owl" uri="webService.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1333469340406" name="http://purl.obolibrary.org/obo/obi/webservice.owl" uri="merged/webservice_merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1333469340406" name="http://purl.obolibrary.org/obo/webService.owl" uri="view/webService.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1333564864968" name="http://purl.obolibrary.org/obo/obi/dev/webService.owl" uri="webService.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1333564864968" name="http://purl.obolibrary.org/obo/obi/webservice.owl" uri="merged/webservice_merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1333564864968" name="http://purl.obolibrary.org/obo/webService.owl" uri="view/webService.owl"/>
     </group>
 </catalog>
