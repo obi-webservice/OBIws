@@ -239,7 +239,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A textual entity that is the suffix for a file name.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -262,6 +262,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -271,14 +277,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data format specification that gives the details of the different types and forms of results available in terms of result type identifier,file extension, mimetype, label, description</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -300,7 +300,7 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115 xml:lang="en">A data format specification that is used to specify the conent type over the Web. (MIME is an acronym for Multipurpose Internet Mail Extension)</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -360,7 +360,7 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">An algorithm that assign set of observations/data into subsets (called clusters) so that observations/data in the same cluster are similar in some sense.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -373,7 +373,7 @@
         <obo:IAO_0000115 xml:lang="en">A sequence analysis objective that describes the aim to study the equivalence between sites of 
 molecular sequences including nucleic acid and protein sequence.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -398,7 +398,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An algorithm that attempts to align two molecular sequences (nucleic acid or protein sequences).</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">type of pairwise alignment used (Possible values fast and slow)</dc:description>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -411,7 +411,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise alignment algorithm that produces accurate alignments are carried out by using a dynamic programming method (Myers and Miller) to align every pair of sequences.
 </obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -454,7 +454,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An algorithm that is used to obtain multiple sequence alignments between nucleotide and protein sequences.</obo:IAO_0000115>
         <obo:IAO_0000114>ITPPR</obo:IAO_0000114>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -465,7 +465,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">gap seperation distance</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the distance (between gaps), within which gap introduction is penalised in addition to gap creation penalty.</obo:IAO_0000115>
     </owl:Class>
     
@@ -479,7 +479,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <dc:description rdf:datatype="&xsd;string">End Gap Seperation: Treats end gaps just like internal gaps for the purposes of avoiding gaps that are too close (set by GAP SEPARATION DISTANCE above). If you turn this off, end gaps will be ignored for this purpose. This is useful when you wish to align fragments where the end gaps are not biologically meaningful.</dc:description>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data item, which is a boolean value, that states whether or not to apply the gap extension penalty when scoring terminal gaps.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -489,7 +489,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
     <owl:Class rdf:about="&obo;OBIws_0000021">
         <rdfs:label xml:lang="en">number of iterations</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the maximum number of iterations to perform.</obo:IAO_0000115>
         <obo:IAO_0000114>WS Annotations Group, UGA</obo:IAO_0000114>
     </owl:Class>
@@ -502,7 +502,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">fast pairwise alignment algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000015"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise alignment algorithm that produces Fast/Approximate alignments using the method of Wilbur and Lipman (1983) and may be more suitable for sequences longer than 1000 residues.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -514,7 +514,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">iteration strategy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <dc:description>For clustalW It can take values: none, tree(Iteration at each step of alignment process) or alignment(Iteration only on final alignment.)</dc:description>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the multiple alignment improvement iteration type. </obo:IAO_0000115>
     </owl:Class>
@@ -533,7 +533,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A textual entity that identifies a particular algorithm to be implemented in a tool or software.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -554,7 +554,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
     <owl:Class rdf:about="&obo;OBIws_0000026">
         <rdfs:label xml:lang="en">retrieve alignment result objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">An objective specification that describes the goal to retrieve the sequence alignment result.</obo:IAO_0000119>
     </owl:Class>
     
@@ -575,7 +575,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <obo:IAO_0000118 rdf:datatype="&xsd;string">job id</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A symbol used to identify a submitted web service job.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -602,7 +602,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A data set that comprises of alignment of multiple sequences.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -620,7 +620,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">job title</obo:IAO_0000118>
         <dc:description rdf:datatype="&xsd;string">title for the web service job submitted</dc:description>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A textual entity that is the name of a web service job submitted.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
@@ -643,7 +643,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">gap creation penalty</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000053"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A gap penalty that specifies the penalty for introducing a gap in an alignment.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -656,7 +656,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000051"/>
         <obo:IAO_0000115 xml:lang="en">A scoring matrix that is used for scoring alignment of nucleotide sequences.</obo:IAO_0000115>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -688,7 +688,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">gap extension penalty</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000053"/>
         <obo:IAO_0000115 xml:lang="en">A gap penalty that specifies the penalty for extending a gap in an alignment.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -730,12 +730,6 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000133"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
             </owl:Restriction>
@@ -746,7 +740,13 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000093"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000133"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A web service execution that returns the status of a job that has been submitted for execution.</obo:IAO_0000115>
     </owl:Class>
@@ -761,31 +761,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000046"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -806,26 +782,8 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000117"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000126"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -844,9 +802,51 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A web service execution that performs global multiple sequence alignment.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -858,8 +858,8 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -870,13 +870,12 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000005"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0
-</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A web service execution that retrieves all the result types supported for a particular execution.</obo:IAO_0000115>
     </owl:Class>
     
@@ -887,12 +886,6 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
     <owl:Class rdf:about="&obo;OBIws_0000045">
         <rdfs:label xml:lang="en">retrieve alignment result execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
@@ -931,8 +924,14 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A web service execution that would fetch the result of alignment analysis.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -943,7 +942,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">global multiple sequence alignment objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000063"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A multiple sequence alignment objective that describes a process to produce an alignment for the entire length of sequence.</obo:IAO_0000115>
-        <obo:IAO_0000117>OBI-WS : v1.0</obo:IAO_0000117>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -961,8 +960,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A service that exposes an arbitrary set of operations which can be accessed through a programmatic interface to a webserver maintained by the service provider.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0 
-</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -973,7 +971,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
     <owl:Class rdf:about="&obo;OBIws_0000049">
         <rdfs:label xml:lang="en">protein scoring matrix</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000051"/>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">There are two options for the protein weight matrix: BOSUM and PAM. The actual matrix that is used depends on how similar the sequences to be aligned at this alignment step are. Different matrices work differently at each evolutionary distance.</obo:IAO_0000112>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A scoring matrix that is used for scoring alignment of protein sequences.</obo:IAO_0000115>
@@ -988,8 +986,14 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1005,17 +1009,11 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A planned process that embodifies execution or implementation of software or a part of the software.</obo:IAO_0000115>
     </owl:Class>
@@ -1030,7 +1028,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A lower triangular matrix used to assign individual scores to aligned sequence positions (nuecleotide/Protein), where each cell represents a score to be assigned to a specific type of pairing.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">WS annotations Group, UGA</obo:IAO_0000117>
         <dc:description rdf:datatype="&xsd;string">assign individual scores to aligned sequence positions (nuecleotide / Protein)</dc:description>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1043,13 +1041,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000043"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000045"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1061,12 +1053,18 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000042"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A web service that invokes ClustalW software.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1078,7 +1076,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the penalty value for each gap induced in an alignment (accounts for both gap creation and gap extension penalties). Usage: It has little affect on the speed or sensitivity except for extreme values.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1088,7 +1086,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
     <owl:Class rdf:about="&obo;OBIws_0000055">
         <rdfs:label xml:lang="en">invoke software execution over network objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">An objective specification that a web service accomplishes.</obo:IAO_0000115>
     </owl:Class>
@@ -1100,7 +1098,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
     <owl:Class rdf:about="&obo;OBIws_0000056">
         <rdfs:label xml:lang="en">number of match regions</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the number of k-tuple matches on each diagonal used to create pairwise alignment. Decrease for speed; increase for sensitivity.</obo:IAO_0000115>
         <obo:IAO_0000114>WS Annotations Group, UGA</obo:IAO_0000114>
     </owl:Class>
@@ -1118,7 +1116,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000139"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the Fast pairwise alignment score output type (can be either percent or absolute).</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
@@ -1131,7 +1129,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">global pairwise sequence alignment objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000065"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment objective  that takes into account the entire length of sequence.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000114>WS Annotations Group, UGA</obo:IAO_0000114>
     </owl:Class>
     
@@ -1150,7 +1148,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the penalty value for each gap present in a fast pairwise alignment (accounts for both gap creation and gap extension penalties). Usage: It has little affect on the speed or sensitivity except for extreme values.</obo:IAO_0000115>
-        <obo:IAO_0000117>OBI-WS : v1.0</obo:IAO_0000117>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1167,8 +1165,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the alignment word size used to find matches between the sequences. Increase for speed (max= 2 for proteins; 4 for DNA), decrease for sensitivity.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0
-</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -1180,7 +1177,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">multiple sequence alignment objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000014"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A sequence alignment objective that takes into consideration multiple sequences at a time and tries to align them.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -1193,7 +1190,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000065"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment objective  that attempts to produce an alignment considering only parts of the sequences.</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000117>OBI-WS : v1.0</obo:IAO_0000117>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1204,8 +1201,8 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label xml:lang="en">pairwise sequence alignment objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000014"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A sequence alignment objective that takes into consideration only two sequences at a time and tries to align them.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
     </owl:Class>
     
 
@@ -1366,13 +1363,13 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000084"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000045"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000045"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000084"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1388,7 +1385,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A Web service that invokes BLAST (Basic Local Alignment Search Tool) analysis.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1405,7 +1402,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A symbol used to identifiy program output choice.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1439,19 +1436,97 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000072"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000095"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1469,55 +1544,25 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000099"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000067"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000082"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000073"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000095"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000064"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000048"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1539,13 +1584,13 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000024"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1557,55 +1602,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000069"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000079"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service operation that performs local pairwise sequence alignment.</obo:IAO_0000115>
@@ -1676,7 +1673,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label rdf:datatype="&xsd;string">pairwise sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200187"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A sequence analysis data transformation process that attempts to align two molecular sequences in order to study the equivalence between sites of molecular sequences including nucleic acid and protein sequence.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -1689,7 +1686,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000090"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A sequence analysis data transformation process that attempts to align two molecular sequences considering only parts of the sequences in order to study the equivalence between sites of molecular sequences including nucleic acid and protein sequence.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1700,8 +1697,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label rdf:datatype="&xsd;string">global multiple sequence alignment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000117"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A multiple sequence alignment process that attempts to align the sequences considering their entire length.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0
-</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000114>ITPPR</obo:IAO_0000114>
     </owl:Class>
     
@@ -1713,7 +1709,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label rdf:datatype="&xsd;string">check job status objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An objective specification that describes the goal of fetching the status of a job submitted for execution.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -1726,7 +1722,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A textual Entity that describes terms in the WSDL that are not modeled in the ontology.</obo:IAO_0000115>
         <obo:IAO_0000114>WS Annotations Group UGA</obo:IAO_0000114>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1802,7 +1798,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A data set that is made up of a rectangular array of elements (or entries) set out by rows and columns.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1816,7 +1812,13 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1828,13 +1830,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000106"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1846,7 +1842,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000097"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service operation that retrives the sequences given the sequence id and the sequence database where to look for.</obo:IAO_0000115>
@@ -1893,7 +1889,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <obo:IAO_0000115>A software execution that is provided by the web service, and involves invoking software execution over network.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -2019,8 +2015,33 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000090"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBIws_0000034"/>
+                            <rdf:Description rdf:about="&obo;OBIws_0000049"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2029,10 +2050,28 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000065"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment process that produces accurate alignments are carried out by using a dynamic programming method (Myers and Miller) to align every pair of sequences.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIws_0000117 -->
+
+    <owl:Class rdf:about="&obo;OBIws_0000117">
+        <rdfs:label xml:lang="en">multiple sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200187"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2051,25 +2090,56 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment process that produces accurate alignments are carried out by using a dynamic programming method (Myers and Miller) to align every pair of sequences.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
-        <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBIws_0000117 -->
-
-    <owl:Class rdf:about="&obo;OBIws_0000117">
-        <rdfs:label xml:lang="en">multiple sequence alignment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0200187"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBIws_0000116"/>
+                            <rdf:Description rdf:about="&obo;OBIws_0000139"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2091,84 +2161,10 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBIws_0000034"/>
-                            <rdf:Description rdf:about="&obo;OBIws_0000049"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBIws_0000116"/>
-                            <rdf:Description rdf:about="&obo;OBIws_0000139"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A sequence analysis data transformation process that attempts to multiple (more than two) molecular sequences in order to study the equivalence between sites of molecular sequences including nucleic acid and protein sequence.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
@@ -2182,7 +2178,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000100"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A matrix with equal number of rows and columns for which all the elements above the main diagonal have values equal to 0.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">WS annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0 </obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -2223,7 +2219,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:label rdf:datatype="&xsd;string">sequence alignment data set</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000100"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data set that specifies the sequence aligment data (both pairwise sequence similarity and multiple sequence alignment report) .</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000114>WS Annotation Group, UGA</obo:IAO_0000114>
     </owl:Class>
     
@@ -2270,7 +2266,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A data format specification identifying the format of multiple sequence alignment data.</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -2293,7 +2289,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 xml:lang="en">A data item that designates the order in which sequences appear in a final alignment. If ALIGNED option is chosen, the output order will be the order in which the sequences were aligned (from the guide tree/dendrogram). If INPUT option is chosen, the output will be in the same order as the input sequences.</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -2325,7 +2321,7 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <dc:description rdf:datatype="&xsd;string">the status of the web service job in execution</dc:description>
         <obo:IAO_0000115 xml:lang="en">A data item that is used to specify the status of a web service job. It usually takes one of following values - DONE, ERROR, NOT_FOUND,PENDING, RUNNING</obo:IAO_0000115>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -2344,24 +2340,6 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000053"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
                 <owl:allValuesFrom rdf:resource="&obo;OBIws_0000022"/>
             </owl:Restriction>
@@ -2372,9 +2350,27 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment process that produces Fast/Approximate alignments using the method of Wilbur and Lipman (1983) and may be more suitable for sequences longer than 1000 residues.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000114>OBI-WS : v1.0</obo:IAO_0000114>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -2452,6 +2448,12 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
         <obo:IAO_0000115>A data item that can be set as true or false to detrimine if multiple high scoring alignments have to be displayed or not.
 </obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
+
+    <owl:Class rdf:about="&owl;DeprecatedClass"/>
     
 
 
@@ -2552,6 +2554,15 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;IAO_0000226"/>
+            <rdf:Description rdf:about="&obo;IAO_0000227"/>
+            <rdf:Description rdf:about="&obo;IAO_0000228"/>
+            <rdf:Description rdf:about="&obo;IAO_0000229"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;IAO_0000120"/>
             <rdf:Description rdf:about="&obo;IAO_0000121"/>
             <rdf:Description rdf:about="&obo;IAO_0000122"/>
@@ -2560,15 +2571,6 @@ molecular sequences including nucleic acid and protein sequence.</obo:IAO_000011
             <rdf:Description rdf:about="&obo;IAO_0000125"/>
             <rdf:Description rdf:about="&obo;IAO_0000423"/>
             <rdf:Description rdf:about="&obo;IAO_0000428"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;IAO_0000226"/>
-            <rdf:Description rdf:about="&obo;IAO_0000227"/>
-            <rdf:Description rdf:about="&obo;IAO_0000228"/>
-            <rdf:Description rdf:about="&obo;IAO_0000229"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
