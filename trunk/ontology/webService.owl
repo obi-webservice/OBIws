@@ -264,6 +264,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -271,12 +277,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data format specification that gives the details of the different types and forms of results available in terms of result type identifier,file extension, mimetype, label, description</obo:IAO_0000115>
@@ -760,14 +760,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000133"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000093"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000093"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000133"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
@@ -801,20 +801,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000046"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000117"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -825,8 +819,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -837,14 +831,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000126"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -866,7 +854,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000128"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000126"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
@@ -915,18 +915,6 @@
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000026"/>
             </owl:Restriction>
@@ -955,6 +943,18 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
@@ -1018,8 +1018,8 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1035,14 +1035,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000005"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
@@ -1087,13 +1087,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000043"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000044"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
@@ -1257,8 +1257,10 @@
     <owl:Class rdf:about="&obo;OBIws_0000066">
         <rdfs:label rdf:datatype="&xsd;string">number of top combinations</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies consistent sets of HSPs to be reported, such that any given HSP is allowed to be a member of just one set. Often, one wishes to see just the best set of consistent HSPs without any other &quot;contaminants&quot; in the output. Values: a numerical value or &#39;All&#39;</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies consistent sets of HSPs to be reported, such that any given HSP is allowed to be a member of just one set. Values: a numerical value or &#39;All&#39;</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">consistent sets of HSPs to be reported, such that any given HSP is allowed to be a member of just one set</dc:description>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1270,6 +1272,8 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies the sensitivity level of the search performed, it can take following values (very low, low,normal, medium, high).</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">specifies the sensitivity level of the search performed, it can take following values (very low, low,normal, medium, high).</dc:description>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1279,8 +1283,10 @@
     <owl:Class rdf:about="&obo;OBIws_0000068">
         <rdfs:label rdf:datatype="&xsd;string">pairwise alignment statistics</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies a statistical model. Can take values from (sum p, poisson, kap).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies a statistical model to use for scoring alignments (pairwise). Can take values from (sum p, poisson, kap).</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">a statistical model to analyze the matches found</dc:description>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1290,8 +1296,10 @@
     <owl:Class rdf:about="&obo;OBIws_0000069">
         <rdfs:label rdf:datatype="&xsd;string">pairwise alignment format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000124"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data format specification identifying the format of pairwise sequence alignment data.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data format specification that identifies the format of pairwise sequence alignment data.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">output format for pairwise sequence alignment.</dc:description>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1302,6 +1310,8 @@
         <rdfs:label rdf:datatype="&xsd;string">low complexity sequence filter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000071"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A sequence filter to process the query sequence, such that the low compexity regions in the sequence are filterted out before performing the search as low complexity regions tend to give a false estimate of the score.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1311,7 +1321,9 @@
     <owl:Class rdf:about="&obo;OBIws_0000071">
         <rdfs:label rdf:datatype="&xsd;string">sequence filter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item which is a filter that processes the query sequence to remove the undesired portions of it before further processing it.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item which is a filter that processes the query sequence to remove the undesired portions of it before further processing.</obo:IAO_0000115>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1322,6 +1334,8 @@
         <rdfs:label rdf:datatype="&xsd;string">include filtered</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies whether or not to show in the output file the query sequence used for the search, post filtering. Filtering here refers to masking of low complexity regions.</obo:IAO_0000115>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1333,6 +1347,7 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies the maximum number of match scores displayed in the output.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">maximum number of match scores shown in the output.</dc:description>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1343,6 +1358,8 @@
         <rdfs:label rdf:datatype="&xsd;string">sequence range</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that defines the range of query sequence to use for search.</obo:IAO_0000115>
+        <obo:IAO_0000116>NCBIBlast Web service documentation</obo:IAO_0000116>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1354,6 +1371,8 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies the maximum number of alignments displayed in the output.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">maximum number of alignments in the output</dc:description>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1364,6 +1383,8 @@
         <rdfs:label rdf:datatype="&xsd;string">gene strand specifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies the DNA/RNA strand (Both, upper or lower strand) to be considered.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1374,6 +1395,8 @@
         <rdfs:label rdf:datatype="&xsd;string">dropoff score</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that determines the minimum allowable score for a sequence to be matched after which the algorithm gives up on alligning that sequence.</obo:IAO_0000115>
+        <obo:IAO_0000119>NCBIBlast Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1385,6 +1408,8 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000100"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data set that specifies the names of molecular sequence databases.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">sequence database that stores protein and neucleotide sequences</dc:description>
+        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1396,6 +1421,8 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that specifies the measure with respect to which the sequences that matched the search criteria are displayed.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">sorts the scores of the sequences in the pairwise sequence alignment output</dc:description>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1414,12 +1441,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000084"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1427,6 +1448,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000084"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A Web service that invokes BLAST (Basic Local Alignment Search Tool) analysis.</obo:IAO_0000115>
@@ -1463,6 +1490,8 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A quantitative confidence value which determines a threshold value such that only alignments scoring more than this value are considered.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">a threshold value such that only alignments scoring more than this value are considered</dc:description>
+        <obo:IAO_0000111>Ready for OBI-WS : v1.0</obo:IAO_0000111>
+        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1473,6 +1502,8 @@
         <rdfs:label rdf:datatype="&xsd;string">tBLASTn</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000096"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A BLAST analysis that searches/aligns a protein query sequence against a nucleotide database at a protein level.</obo:IAO_0000115>
+        <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1485,61 +1516,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000074"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000064"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000099"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000076"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1557,19 +1558,49 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000075"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1590,26 +1621,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000067"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:allValuesFrom rdf:resource="&obo;OBIws_0000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1621,31 +1634,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000066"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000073"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000076"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000079"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000082"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1654,7 +1661,33 @@
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000095"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service operation that performs local pairwise sequence alignment.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service execution that performs local pairwise sequence alignment to search a database for similar sequences.</obo:IAO_0000115>
+        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1665,6 +1698,8 @@
         <rdfs:label rdf:datatype="&xsd;string">tBLASTx</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000096"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A BLAST analysis that searches/aligns a nucleotide query sequence against a nucleotide database at a protein level.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1674,7 +1709,9 @@
     <owl:Class rdf:about="&obo;OBIws_0000086">
         <rdfs:label rdf:datatype="&xsd;string">BLASTn</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000096"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A BLAST aanalysis that searches/aligns a nucleotide query sequence against a nucleotide database at a nucleoide level.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A BLAST analysis that searches/aligns a nucleotide query sequence against a nucleotide database at a nucleoide level.</obo:IAO_0000115>
+        <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1685,6 +1722,8 @@
         <rdfs:label rdf:datatype="&xsd;string">BLASTx</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000096"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A BLAST analysis that searches/aligns a nucleotide query sequence against a protein database at a protein level.</obo:IAO_0000115>
+        <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1702,6 +1741,8 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">BLAST (Basic Local Alignment Search Tool) algorithm is a heuristic search algorithm for comparing primary biological sequence information, such as the amino-acid or nucleotides sequences with a database of sequences, and identify sequences that resemble the query sequence above a certain threshold.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">different kinds of blast programs</dc:description>
+        <obo:IAO_0000119>Wikipedia: BLAST</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1712,6 +1753,8 @@
         <rdfs:label rdf:datatype="&xsd;string">BLASTp</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000096"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A BLAST analysis that searches/aligns a protein query sequence against a protein database at a protein level.</obo:IAO_0000115>
+        <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1788,6 +1831,8 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A Data Item that specifies Match/miss-match scores to generate a scoring matrix for for nucleotide searches.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">Match miss match score used for generating the nucleotide scoring matrix.</dc:description>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>NCBIBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1816,8 +1861,15 @@
     <owl:Class rdf:about="&obo;OBIws_0000097">
         <rdfs:label rdf:datatype="&xsd;string">sequence identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An identifier of molecular sequence(s) or entries from a molecular sequence database.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">EDAM</obo:IAO_0000119>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A symbol that is an identifier of molecular sequence(s) or entries from a molecular sequence database.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">EDAM: sequence identifier</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1826,7 +1878,7 @@
 
     <owl:Class rdf:about="&obo;OBIws_0000098">
         <rdfs:label rdf:datatype="&xsd;string">run T-Coffee execution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service operation that performs global multiple sequence alignment.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1839,6 +1891,8 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item which is boolean that determines if the gapped areas in query sequence should be aligned or not.</obo:IAO_0000115>
         <dc:description rdf:datatype="&xsd;string">a boolean value specifying wether to use the gaped areas during the pairwise alignment</dc:description>
+        <obo:IAO_0000119>NCBIBlast Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1870,19 +1924,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000106"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000097"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000106"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1897,13 +1957,9 @@
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service operation that retrives the sequences given the sequence id and the sequence database where to look for.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service execution that retrives the sequences given the sequence id and the sequence database where to look for.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1915,11 +1971,19 @@
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:allValuesFrom rdf:resource="&obo;OBIws_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service operation for predicting  the presence and location of signal peptide cleavage sites in amino acid sequences.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service execution that achieves predict signal peptide cleavage sites objective.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1930,6 +1994,8 @@
         <rdfs:label rdf:datatype="&xsd;string">predict signal peptide cleavage sites objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An objective specification that describes the goal of predicting  the presence and location of signal peptide cleavage sites in amino acid sequences.</obo:IAO_0000115>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1969,6 +2035,8 @@
         <rdfs:label rdf:datatype="&xsd;string">sequence data format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data format specification for molecular sequence feature information.</obo:IAO_0000115>
+        <obo:IAO_0000119>EDAM</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -1979,6 +2047,8 @@
         <rdfs:label rdf:datatype="&xsd;string">retrieve sequences objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An objective specification which is goal of an operation that retrives sequences given the sequence id and the database, where to lookup for these sequences.</obo:IAO_0000115>
+        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -2008,7 +2078,7 @@
 
     <owl:Class rdf:about="&obo;OBIws_0000110">
         <rdfs:label rdf:datatype="&xsd;string">score format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Format for scores table in FASTA output.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2062,7 +2132,9 @@
         <rdfs:label rdf:datatype="&xsd;string">display histograms</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A data item that can be set as true or false to determine if the histogram is returned with the result of FASTA search. The histogram gives a qualitative view of how well the statistical theory fits the similarity scores calculated by the program.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <rdfs:comment>Added textual definition : March 19 2012 (Alok)</rdfs:comment>
+        <obo:IAO_0000119>FASTA Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2075,13 +2147,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2100,13 +2178,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000016"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment process that produces accurate alignments are carried out by using a dynamic programming method (Myers and Miller) to align every pair of sequences.</obo:IAO_0000115>
@@ -2125,13 +2197,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2139,27 +2205,12 @@
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom>
                     <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBIws_0000024"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000013"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBIws_0000034"/>
+                            <rdf:Description rdf:about="&obo;OBIws_0000049"/>
+                        </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2182,21 +2233,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBIws_0000034"/>
-                            <rdf:Description rdf:about="&obo;OBIws_0000049"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2214,6 +2258,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000020"/>
             </owl:Restriction>
@@ -2222,6 +2272,28 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBIws_0000024"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000013"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A sequence analysis data transformation process that attempts to align multiple (more than two) molecular sequences in order to study the equivalence between sites of molecular sequences including nucleic acid and protein sequence.</obo:IAO_0000115>
@@ -2407,7 +2479,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2431,7 +2503,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000061"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment process that produces Fast/Approximate alignments using the method of Wilbur and Lipman (1983) and may be more suitable for sequences longer than 1000 residues.</obo:IAO_0000115>
@@ -2512,8 +2584,91 @@
     <owl:Class rdf:about="&obo;webService.owl#display_multiple_HSPs">
         <rdfs:label>display multiple HSPs</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119>FASTA Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115>A data item that can be set as true or false to detrimine if multiple high scoring alignments have to be displayed or not.
 </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/webService.owl#predicted_signal_peptide_cleavage_sites_outcome -->
+
+    <owl:Class rdf:about="&obo;webService.owl#predicted_signal_peptide_cleavage_sites_outcome">
+        <rdfs:label>predicted signal peptide cleavage sites outcome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000115>A data item which is the outcome of &#39;predict signal peptide cleavage sites&#39; operation that specifies if a signal peptide chain is found or not. Usage: For signalp-3.1-nn  is &#39;Y&#39; (yes) and &#39;N&#39; (no) depending on the selected threshold and for signalp-3.1-hmm the answer is &#39;S&#39; f or signal peptide, &#39;A&#39; for signal Anchor (&#39;euk&#39; only) and &#39;Q&#39; for none of the above.
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/webService.owl#prediction_model -->
+
+    <owl:Class rdf:about="&obo;webService.owl#prediction_model">
+        <rdfs:label>sinal peptide prediction model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
+        <obo:IAO_0000115>An algorithm that is used as a prediction model to predict the location of signal peptide in a protein sequence. Can take values as &quot;nn&quot; for neural networks and &quot;hmm&quot; for hidden Markov models only
+</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/webService.owl#retrieve_signalP_result_execution_ -->
+
+    <owl:Class rdf:about="&obo;webService.owl#retrieve_signalP_result_execution_">
+        <rdfs:label>retrieve signalP result execution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;webService.owl#retrieve_signalP_result_objective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A web service execution that achieves retrieve signalP result objective.</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/webService.owl#retrieve_signalP_result_objective -->
+
+    <owl:Class rdf:about="&obo;webService.owl#retrieve_signalP_result_objective">
+        <rdfs:label>retrieve signalP result objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000115>An objective specification that describes the goal of retrieving the result of an operation to predict  the presence and location of signal peptide cleavage sites in amino acid sequences.</obo:IAO_0000115>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/webService.owl#signal_peptide_prediction_threshold -->
+
+    <owl:Class rdf:about="&obo;webService.owl#signal_peptide_prediction_threshold">
+        <rdfs:label>signal peptide prediction threshold</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000115>A quantitative confidance value that acts as a threshold score to determine if the sequence pattern in consideration is a signal peptide or not.
+</obo:IAO_0000115>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/webService.owl#signal_peptide_score -->
+
+    <owl:Class rdf:about="&obo;webService.owl#signal_peptide_score">
+        <rdfs:label>signal peptide score</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000111>Ready for OBI-WS : v1.0</obo:IAO_0000111>
+        <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+        <obo:IAO_0000115>A data item that is a tuple comprising of type of score (nn_score or hmm_score) and its value. The type of score would depend upon the prediction model used for locating the signal Peptide Chain.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2615,6 +2770,15 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;IAO_0000226"/>
+            <rdf:Description rdf:about="&obo;IAO_0000227"/>
+            <rdf:Description rdf:about="&obo;IAO_0000228"/>
+            <rdf:Description rdf:about="&obo;IAO_0000229"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;IAO_0000120"/>
             <rdf:Description rdf:about="&obo;IAO_0000121"/>
             <rdf:Description rdf:about="&obo;IAO_0000122"/>
@@ -2623,15 +2787,6 @@
             <rdf:Description rdf:about="&obo;IAO_0000125"/>
             <rdf:Description rdf:about="&obo;IAO_0000423"/>
             <rdf:Description rdf:about="&obo;IAO_0000428"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;IAO_0000226"/>
-            <rdf:Description rdf:about="&obo;IAO_0000227"/>
-            <rdf:Description rdf:about="&obo;IAO_0000228"/>
-            <rdf:Description rdf:about="&obo;IAO_0000229"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
