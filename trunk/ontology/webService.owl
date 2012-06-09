@@ -537,7 +537,6 @@
 
     <rdf:Description rdf:about="&obo;OBI_0001173">
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </rdf:Description>
     
 
@@ -561,8 +560,13 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000001 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000001">
-        <rdfs:label xml:lang="en">file name</rdfs:label>
+        <rdfs:label xml:lang="en">digital document name</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <obo:IAO_0000115>A textual entity that refers to a digital document derived from a computer system.</obo:IAO_0000115>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
+        <obo:IAO_0000118>file name</obo:IAO_0000118>
+        <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -592,6 +596,7 @@
         <obo:IAO_0000119>EDAM: file extension</obo:IAO_0000119>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115>A textual entity that is the suffix for a file name.</obo:IAO_0000115>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
     </owl:Class>
     
 
@@ -609,12 +614,12 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000005 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000005">
-        <rdfs:label xml:lang="en">program output choices</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
+        <rdfs:label xml:lang="en">metadata of data format specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -626,11 +631,23 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A data format specification that gives the details of the different types and forms of results available in terms of result type identifier,file extension, mimetype, label, description</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A textual entity that gives the details of the different supported data formats and associated file extension and other metedata.</obo:IAO_0000115>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -653,6 +670,7 @@
         <rdfs:label xml:lang="en">MIME type specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000098"/>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
         <obo:IAO_0000115 xml:lang="en">A data format specification that is used to specify the conent type over the Web. (MIME is an acronym for Multipurpose Internet Mail Extension)</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>Wikipedia: en.wikipedia.org/wiki/MIME</obo:IAO_0000119>
@@ -779,24 +797,13 @@
 
     <owl:Class rdf:about="&obo;OBIws_0000017">
         <rdfs:label xml:lang="en">email address</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <dc:description rdf:datatype="&xsd;string">user email address</dc:description>
         <obo:IAO_0000114>Need to Discuss, Exists twice.</obo:IAO_0000114>
+        <obo:IAO_0000116>Replaced by IAO Email address</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A textual entity that is used as a unique identifier of an email box, that is located on a particular email server, and which is used by a person or an organization for purposes of email delivery or sending (i.e. email communication). Email address has two parts, the part before the &quot;@&quot; sign is the local-part of the address, often the username of the recipient, and the part after the &quot;@&quot; sign which is a domain name to which the e-mail message will be sent.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_6677000</obo:IAO_0000119>
+        <obo:IAO_0000231 rdf:resource="&obo;IAO_0000103"/>
     </owl:Class>
     
 
@@ -921,9 +928,9 @@
         <rdfs:label xml:lang="en">retrieve alignment result objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
         <obo:IAO_0000115 xml:lang="en">An objective specification that describes the goal to retrieve the sequence alignment result.</obo:IAO_0000115>
+        <obo:IAO_0000119>ClustalW Web service Documentation : www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
-        <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -932,19 +939,20 @@
 
     <owl:Class rdf:about="&obo;OBIws_0000027">
         <rdfs:label rdf:datatype="&xsd;string">web service execution identifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000577"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description rdf:datatype="&xsd;string">Unique identifier for Web Service job</dc:description>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Unique identifier for Web Service job</obo:IAO_0000116>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">job id</obo:IAO_0000118>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">A symbol used to uniquely identify a submitted web service job.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
-        <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
+        <obo:IAO_0000119>ClustalW Web service Documentation : www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A CRID symbol used to uniquely identify a submitted web service execution.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1002,9 +1010,12 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000031 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000031">
-        <rdfs:label rdf:datatype="&xsd;string">filter sequences</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">filter sequence data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Filter sequences Execution is a Web service Execution that filters sequences depending on their score and Expectation value</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service execution that filters sequence data depending on their similarity score to a specified sequence and expectation value.</obo:IAO_0000115>
+        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
+        <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1101,14 +1112,8 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000042 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000042">
-        <rdfs:label xml:lang="en">check job status execution</rdfs:label>
+        <rdfs:label xml:lang="en">get web service execution status</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
@@ -1117,13 +1122,20 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="&obo;OBIws_0000133"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A web service execution that returns the status of a job that has been submitted for execution.</obo:IAO_0000115>
-        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000118>get job status</obo:IAO_0000118>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
+        <obo:IAO_0000115 xml:lang="en">A web service execution that returns the status (e.g. Finished, Running) of a web service execution, depending upon  web service execution identifier.  .</obo:IAO_0000115>
+        <obo:IAO_0000119>ClustalW Web service Documentation : www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -1134,42 +1146,6 @@
     <owl:Class rdf:about="&obo;OBIws_0000043">
         <rdfs:label xml:lang="en">run clustalW execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000090"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000117"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
@@ -1188,6 +1164,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000128"/>
             </owl:Restriction>
@@ -1195,7 +1177,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1220,6 +1220,18 @@
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000126"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A web service execution that performs global multiple sequence alignment.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
@@ -1231,8 +1243,14 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000044 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000044">
-        <rdfs:label xml:lang="en">get supported alignment result type execution</rdfs:label>
+        <rdfs:label xml:lang="en">get supported output data format</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;webService.owl#get_supported_output_data_format_objective"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
@@ -1241,20 +1259,16 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A web service execution that retrieves all the result types supported for a particular execution.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000119>ClustalW Web service Documentation : www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <obo:IAO_0000118>get result types</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="en">A web service execution that retrieves all the supported output data format for a particular execution.</obo:IAO_0000115>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
     </owl:Class>
     
 
@@ -1264,12 +1278,6 @@
     <owl:Class rdf:about="&obo;OBIws_0000045">
         <rdfs:label xml:lang="en">retrieve alignment result execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
@@ -1300,6 +1308,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1386,12 +1400,6 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:allValuesFrom rdf:resource="&obo;IAO_0000005"/>
             </owl:Restriction>
@@ -1399,6 +1407,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1426,43 +1440,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBIws_0000052 -->
-
-    <owl:Class rdf:about="&obo;OBIws_0000052">
-        <rdfs:label xml:lang="en">clustalW web service</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBIws_0000048"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000043"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000045"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000042"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A web service that invokes ClustalW software.</obo:IAO_0000115>
-        <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
-        <obo:IAO_0000116>Review Later : Currently not used in Annotations but present in the Model</obo:IAO_0000116>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBIws_0000053 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000053">
@@ -1481,7 +1458,8 @@
     <owl:Class rdf:about="&obo;OBIws_0000055">
         <rdfs:label xml:lang="en">invoke software execution over network objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">An objective specification that a web service accomplishes.</obo:IAO_0000115>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
+        <obo:IAO_0000115 xml:lang="en">An objective specification that a web service execution accomplishes.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
@@ -1788,43 +1766,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBIws_0000080 -->
-
-    <owl:Class rdf:about="&obo;OBIws_0000080">
-        <rdfs:label rdf:datatype="&xsd;string">BLAST web service</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBIws_0000048"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000045"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000084"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000042"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A Web service that invokes BLAST (Basic Local Alignment Search Tool) analysis.</obo:IAO_0000115>
-        <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000116>Review Later : Currently not used in Annotations but present in the Model</obo:IAO_0000116>
-        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBIws_0000081 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000081">
@@ -1876,104 +1817,8 @@
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                 <owl:allValuesFrom rdf:resource="&obo;OBIws_0000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000067"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000079"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000070"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000069"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000024"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1985,7 +1830,139 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000095"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000099"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000070"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2007,43 +1984,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000095"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000064"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000082"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000075"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000073"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service execution that performs local pairwise sequence alignment to search a database for similar sequences.</obo:IAO_0000115>
@@ -2180,12 +2121,13 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000093 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000093">
-        <rdfs:label rdf:datatype="&xsd;string">check job status objective</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">check web service execution objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An objective specification that describes the goal of fetching the status of a job submitted for execution.</obo:IAO_0000115>
-        <obo:IAO_0000119>check job status objective</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An objective specification that describes the goal of fetching the status of a web service execution.</obo:IAO_0000115>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <obo:IAO_0000118>check job status objective</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2229,12 +2171,6 @@
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000091"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000064"/>
             </owl:Restriction>
@@ -2243,6 +2179,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string"> A local pairwise sequence alignment data transformation that compares nucleotide or protein sequences to sequence databases and calculates the statistical significance of matches.  BLAST (BLAST : Basic Local Alignment Search Tool) can be used to infer functional and evolutionary relationships between sequences as well as help identify members of gene families.</obo:IAO_0000115>
@@ -2323,7 +2265,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000106"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2334,26 +2276,26 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000106"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000107"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service execution that retrives the sequences given the sequence id and the sequence database where to look for.</obo:IAO_0000115>
@@ -2370,14 +2312,14 @@
         <rdfs:subClassOf rdf:resource="&obo;OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000048"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000103"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="&obo;OBIws_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A web service execution that achieves predict signal peptide cleavage sites objective.</obo:IAO_0000115>
@@ -2415,6 +2357,7 @@
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <obo:IAO_0000118>web service operation</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2566,13 +2509,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000033"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment data transformation that produces accurate alignments are carried out by using a dynamic programming method (Myers and Miller) to align every pair of sequences.</obo:IAO_0000115>
@@ -2592,6 +2535,49 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBIws_0000034"/>
+                            <rdf:Description rdf:about="&obo;OBIws_0000049"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2601,6 +2587,12 @@
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2621,14 +2613,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000018"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2639,57 +2625,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000023"/>
+                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBIws_0000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000063"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBIws_0000034"/>
-                            <rdf:Description rdf:about="&obo;OBIws_0000049"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>multiple sequence alignment</obo:IAO_0000118>
@@ -2852,11 +2795,13 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000133 -->
 
     <owl:Class rdf:about="&obo;OBIws_0000133">
-        <rdfs:label xml:lang="en">job status datum</rdfs:label>
+        <rdfs:label xml:lang="en">web service execution status</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <dc:description rdf:datatype="&xsd;string">the status of the web service job in execution</dc:description>
-        <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A data item that is used to specify the status of a web service job. It usually takes one of following values - DONE, ERROR, NOT_FOUND,PENDING, RUNNING</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">The status of the web service job in execution</obo:IAO_0000116>
+        <obo:IAO_0000119>ClustalW Web service Documentation www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
+        <obo:IAO_0000118>job status</obo:IAO_0000118>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
+        <obo:IAO_0000115 xml:lang="en">A data item that is used to specify the status of a web service execution. It usually takes one of following values - DONE, ERROR, NOT_FOUND,PENDING, RUNNING</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -2877,13 +2822,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000061"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000060"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2895,7 +2840,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBIws_0000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A pairwise sequence alignment data transformation that produces Fast/Approximate alignments using the method of Wilbur and Lipman (1983) and may be more suitable for sequences longer than 1000 residues.</obo:IAO_0000115>
@@ -2983,6 +2928,19 @@
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115>A data item that can be set as true or false to detrimine if multiple high scoring alignments have to be displayed or not.
 </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/webService.owl#get_supported_output_data_format_objective -->
+
+    <owl:Class rdf:about="&obo;webService.owl#get_supported_output_data_format_objective">
+        <rdfs:label>retrieve supported output data format objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115>An objective specification that describes the goal of retrieving the supported output data formats for a particular web service execution.</obo:IAO_0000115>
+        <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <webService:WS_term_Reviewed>yes</webService:WS_term_Reviewed>
+        <obo:IAO_0000119>ClustalW Web service Documentation : www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -3358,7 +3316,6 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000134 -->
 
     <owl:NamedIndividual rdf:about="&obo;OBIws_0000134">
-        <rdf:type rdf:resource="&obo;OBIws_0000133"/>
         <rdfs:label xml:lang="en">running</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">a job status datum used to indicate a submitted web service job is still running</obo:IAO_0000115>
     </owl:NamedIndividual>
@@ -3368,7 +3325,6 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000135 -->
 
     <owl:NamedIndividual rdf:about="&obo;OBIws_0000135">
-        <rdf:type rdf:resource="&obo;OBIws_0000133"/>
         <rdfs:label xml:lang="en">completed running</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">a job status datum used to indicate the running of a submitted web service job is complete</obo:IAO_0000115>
     </owl:NamedIndividual>
@@ -14239,14 +14195,7 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;IAO_0000120"/>
-            <rdf:Description rdf:about="&obo;IAO_0000121"/>
-            <rdf:Description rdf:about="&obo;IAO_0000122"/>
-            <rdf:Description rdf:about="&obo;IAO_0000123"/>
-            <rdf:Description rdf:about="&obo;IAO_0000124"/>
-            <rdf:Description rdf:about="&obo;IAO_0000125"/>
-            <rdf:Description rdf:about="&obo;IAO_0000423"/>
-            <rdf:Description rdf:about="&obo;IAO_0000428"/>
+            <rdf:Description rdf:about="&obo;IAO_0000224"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
@@ -14261,7 +14210,14 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;IAO_0000224"/>
+            <rdf:Description rdf:about="&obo;IAO_0000120"/>
+            <rdf:Description rdf:about="&obo;IAO_0000121"/>
+            <rdf:Description rdf:about="&obo;IAO_0000122"/>
+            <rdf:Description rdf:about="&obo;IAO_0000123"/>
+            <rdf:Description rdf:about="&obo;IAO_0000124"/>
+            <rdf:Description rdf:about="&obo;IAO_0000125"/>
+            <rdf:Description rdf:about="&obo;IAO_0000423"/>
+            <rdf:Description rdf:about="&obo;IAO_0000428"/>
         </owl:distinctMembers>
     </rdf:Description>
 </rdf:RDF>
