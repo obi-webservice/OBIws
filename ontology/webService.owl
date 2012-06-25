@@ -29,7 +29,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBIws_0000165"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBIws_0000165">
+        <rdfs:label>OBIws reviewed</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/obi/webService.owl#Class_001">
+        <rdfs:label xml:lang="en">Jie Comment</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -181,16 +186,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000973 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000973">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement datum that representing the primary structure of a 
-    macromolecule(it&#39;s sequence) sometimes associated with an indicator of 
-    confidence of that measurement.</obo:IAO_0000115>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0001173 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001173">
@@ -204,11 +199,18 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000001">
         <rdfs:label xml:lang="en">digital document name</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115>A textual entity that refers to a digital document derived from a computer system.</obo:IAO_0000115>
         <obo:OBIws_0000165>yes</obo:OBIws_0000165>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
         <obo:IAO_0000118>file name</obo:IAO_0000118>
+        <Class_001>add denotes to document</Class_001>
     </owl:Class>
     
 
@@ -260,6 +262,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000081"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
             </owl:Restriction>
@@ -284,12 +292,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000081"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -308,6 +310,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maimum number of HMM iterations</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
+        <Class_001>does it used in annotation?
+need defintion</Class_001>
     </owl:Class>
     
 
@@ -329,7 +333,7 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum number of guide tree iterations</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolet_maximum number of guide tree iterations</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
     </owl:Class>
     
@@ -377,6 +381,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000013">
         <rdfs:label xml:lang="en">clustering algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <Class_001>good</Class_001>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">An algorithm that assigns set of observations/data into subsets (called clusters) so that observations/data in the same cluster are similar in some sense.</obo:IAO_0000115>
@@ -419,6 +424,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm that attempts to align two molecular sequences (nucleic acid or protein sequences).</obo:IAO_0000115>
         <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
+        <Class_001>suggest to remove the last axiom since it can be executed in several different processes</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
@@ -465,6 +471,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An algorithm that is used to obtain multiple sequence alignments between nucleotide or protein sequences.</obo:IAO_0000115>
+        <Class_001>good</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
@@ -479,6 +486,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000119>ClustalW Web service Documentation and WS annotations Group, UGA</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>is it a data like 2,3,...?
+How about add &#39;datum&#39; in the label?
+textual definiton not so clear</Class_001>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the distance (between gaps), within which introducing a new gap is penalised in addition to gap creation penalty.</obo:IAO_0000115>
     </owl:Class>
@@ -493,6 +503,9 @@
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">End Gap Seperation: Treats end gaps just like internal gaps for the purposes of avoiding gaps that are too close (set by GAP SEPARATION DISTANCE above). If you turn this off, end gaps will be ignored for this purpose. This is useful when you wish to align fragments where the end gaps are not biologically meaningful.</dc:description>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data item, which is a boolean value, that states whether or not to apply the gap extension penalty when scoring terminal gaps.</obo:IAO_0000115>
+        <Class_001>not happy with label.
+add &#39;sign&#39;? or any better word?
+might create a &#39;program/software/execution setting datum&#39; as parent for all thes kind of inputs</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>ClustalW Web service Documentation and WS annotations Group, UGA</obo:IAO_0000119>
     </owl:Class>
@@ -535,6 +548,7 @@
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the multiple alignment improvement iteration type. </obo:IAO_0000115>
+        <Class_001>software execution setting datum/value/specification</Class_001>
     </owl:Class>
     
 
@@ -546,14 +560,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A symbol that identifies a particular algorithm to be implemented in a tool or software.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <Class_001>good, change is_about to denotes</Class_001>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A symbol that specifies a particular algorithm to be implemented in a tool or software.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -572,6 +587,10 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item which is a tree that represents the relationship between sequences and is used to build the multiple sequence alignment. For the first iteration of multiple sequence alignment process the guide tree is constructed by a clustering method while for the subsequent iterations it is constructed from the previous iteration.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>Wikipedia : http://en.wikipedia.org/wiki/Multiple_sequence_alignment</obo:IAO_0000119>
+        <Class_001>why have this axiom
+&#39;is about&#39; some &#39;multiple sequence alignment data transformation&#39;?
+Not used by any ontology term defined
+Does it used in annotation? If so, it should link to some process</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -582,6 +601,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000026">
         <rdfs:label xml:lang="en">retrieve alignment result objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000171"/>
+        <Class_001>good</Class_001>
         <obo:IAO_0000119>ClustalW Web service Documentation : www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A retrieve web service execution result objective that describes the goal of retrieving the sequence alignment result.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
@@ -635,6 +655,8 @@
         </rdfs:subClassOf>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A data set that is produced as the output of a multiple sequence aligment process.</obo:IAO_0000115>
+        <Class_001>similar comment as its parent
+should be is_encoded_in some &#39;multiple sequence alignment data format specification</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
     </owl:Class>
@@ -649,12 +671,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">job title</obo:IAO_0000118>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A textual entity that is the name of a web service job submitted.</obo:IAO_0000115>
+        <Class_001>change denotes only &#39;software execution&#39; to &#39;web service execution&#39;</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -668,25 +691,25 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000082"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000147"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -701,10 +724,12 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000033">
-        <rdfs:label xml:lang="en">gap creation penalty</rdfs:label>
+        <rdfs:label xml:lang="en">gap creation penalty value</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000053"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gap penalty that specifies the penalty for introducing a new gap when producing an alignment.</obo:IAO_0000115>
+        <obo:IAO_0000118>gap creation penalty</obo:IAO_0000118>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>add &#39;value&#39; in the term label</Class_001>
         <obo:IAO_0000119>EDAM: gap creation penalty</obo:IAO_0000119>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
@@ -716,6 +741,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000034">
         <rdfs:label xml:lang="en">DNA scoring matrix</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000051"/>
+        <Class_001>good</Class_001>
         <obo:IAO_0000115 xml:lang="en">A scoring matrix that is used for scoring alignment of nucleotide sequences.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
@@ -727,10 +753,12 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000036">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein Distance Matrix</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein distance matrix</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000100"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protein Distance Matrix is a Matrix with each species starting on a new line with the species name, followed by the distances to the species in order continuing onto a new line after every nine distances.</obo:IAO_0000115>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
+        <Class_001>need to check its definition.
+need to say something about protein here and what it is used for</Class_001>
     </owl:Class>
     
 
@@ -740,7 +768,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000037">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phylip protDist execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000040"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phylip protDist execution is web service execution that uses protein sequences to compute a distance matrix, under three different models of amino acid replacement. The distance for each pair of species estimates the total branch length between the two species, and can be used in the distance matrix programs FITCH, KITSCH or NEIGHBOR.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A phylip execution that uses protein sequences to compute a distance matrix, under three different models of amino acid replacement. The distance for each pair of species estimates the total branch length between the two species, and can be used in the distance matrix programs FITCH, KITSCH or NEIGHBOR.</obo:IAO_0000115>
+        <Class_001>minor changes on the defintion
+need check logical definition</Class_001>
     </owl:Class>
     
 
@@ -748,10 +778,12 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000038">
-        <rdfs:label xml:lang="en">gap extension penalty</rdfs:label>
+        <rdfs:label xml:lang="en">gap extension penalty value</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000053"/>
         <obo:IAO_0000115 xml:lang="en">A gap penalty that specifies the penalty for extending a gap when aligning sequences.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000118>gap extension penalty</obo:IAO_0000118>
+        <Class_001>add &#39;value&#39; in the term label</Class_001>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000119>EDAM: gap extension penalty</obo:IAO_0000119>
     </owl:Class>
@@ -763,7 +795,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000039">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phylip neighbor execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000040"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phylip neighbor execution is web service execution that implements the Neighbor-Joining method of Nei and Saitou (1987) and the UPGMA method of clustering which constructs a tree by successive clustering of lineages, setting branch lengths as the lineages join.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A phylip execution that implements the Neighbor-Joining method of Nei and Saitou (1987) and the UPGMA method of clustering which constructs a tree by successive clustering of lineages, setting branch lengths as the lineages join.</obo:IAO_0000115>
+        <Class_001>minor changes on the defintion
+need check logical definition</Class_001>
     </owl:Class>
     
 
@@ -771,9 +805,12 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000040">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">run phylip operation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phylip execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000104"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Run phylip operation is a web service execution that involves execution of various phylip programs.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A web service execution that involves execution of various phylip programs.</obo:IAO_0000115>
+        <Class_001>change label from &#39;run phylip operation&#39; to phylip execution
+Need logical definition.
+It should have &#39;sequence analysis objective&#39; too </Class_001>
     </owl:Class>
     
 
@@ -794,6 +831,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000104"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000133"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000027"/>
             </owl:Restriction>
@@ -802,12 +845,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000093"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000133"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
@@ -827,23 +864,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000443"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -865,19 +886,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000126"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000027"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -888,8 +903,36 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000443"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000126"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -904,15 +947,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000128"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A web service execution that performs multiple sequence alignment.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <Class_001>Might need double check whether all added inputs/outputs are needed</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
@@ -958,6 +996,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000158"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -994,17 +1038,12 @@
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000118>get result</obo:IAO_0000118>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A &#39;retrieve web service execution result&#39; that would fetch the result of alignment analysis given its unique execution indetifier.</obo:IAO_0000115>
+        <Class_001>should remove its alternative term which is same as its parent. it will confuse the users.</Class_001>
+        <obo:IAO_0000115 xml:lang="en">A retrieve web service execution result that would fetch the result of alignment analysis given its unique execution indetifier.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1047,9 +1086,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000049">
         <rdfs:label xml:lang="en">protein scoring matrix</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000051"/>
-        <obo:IAO_0000119>WS annotations Group, UGA</obo:IAO_0000119>
-        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">There are two options for the protein weight matrix: BOSUM and PAM. The actual matrix that is used depends on how similar the sequences to be aligned at this alignment step are. Different matrices work differently at each evolutionary distance.</obo:IAO_0000112>
+        <obo:IAO_0000119>WS annotations Group, UGA</obo:IAO_0000119>
+        <Class_001>its members have no definition</Class_001>
+        <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A scoring matrix that is used for scoring alignment of protein sequences.</obo:IAO_0000115>
     </owl:Class>
@@ -1079,6 +1119,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
@@ -1087,12 +1133,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
@@ -1114,6 +1154,7 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WS annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>WS annotations Group, UGA</obo:IAO_0000119>
+        <Class_001>good</Class_001>
     </owl:Class>
     
 
@@ -1121,11 +1162,13 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000053">
-        <rdfs:label xml:lang="en">gap penalty</rdfs:label>
+        <rdfs:label xml:lang="en">gap penalty value</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000119>EDAM: gap Penalty</obo:IAO_0000119>
+        <obo:IAO_0000118>gap penalty</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the penalty value for each gap introduced when aligning sequences (accounts for both gap creation and gap extension penalties). It has little affect on the speed or sensitivity except for extreme values.</obo:IAO_0000115>
+        <Class_001>add &#39;value&#39; in the term label</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
@@ -1154,6 +1197,7 @@
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000114>WS Annotations Group, UGA</obo:IAO_0000114>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
+        <Class_001>good</Class_001>
     </owl:Class>
     
 
@@ -1162,7 +1206,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000057">
         <rdfs:label xml:lang="en">fast pairwise alignment scoring method</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -1171,7 +1215,13 @@
         </rdfs:subClassOf>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A data item that specifies the Fast pairwise alignment score output type (can be either percent or absolute).</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A symbol that specifies the fast pairwise alignment score output type (can be either percent or absolute).</obo:IAO_0000115>
+        <Class_001>label it not good, kind of confused
+change it from data item to symbol
+
+why has this &#39;is about&#39; some &#39;fast pairwise sequence alignment data transformation&#39;? It is its input parameter. suggest remove
+
+its members have no definition</Class_001>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -1202,6 +1252,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
+        <Class_001>why with axiom, is about some &#39;mulitple sequence ...&#39;
+I think it is its inputs, suggest to remove this axiom.</Class_001>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the number of diagonals around each of the &#39;best&#39; diagonals that will be used for joining word matches. Decrease for speed; increase for sensitivity.
 </obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
@@ -1225,6 +1277,8 @@
         <obo:IAO_0000119>ClustalW Web service Documentation</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A data item that specifies the alignment word size used to find matches between the sequences. A higher value increases the speed of the alignment but decreases the sensitivity.</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
+        <Class_001>why with axiom, is about some &#39;mulitple sequence ...&#39;
+I think it is its inputs, suggest to remove this axiom.</Class_001>
     </owl:Class>
     
 
@@ -1278,6 +1332,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement datum that specifies the number of HSPs to be reported, such that any given HSP is allowed to be a member of just one set. Values: a numerical value or &#39;All&#39;</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>Don&#39;t think it is measurement datum. didn&#39;t get from a measurment process. 
+suggest change to data item</Class_001>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
@@ -1286,12 +1342,15 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000067">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pairwise alignment sensitivity</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pairwise alignment sensitivity categorical datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that specifies the sensitivity level of the search performed, it can take following values (very low, low,normal, medium, high).</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
+        <Class_001>change label, add categorical datum
+its members don&#39;t have definition</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000118>pairwise alignment sensitivity</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1302,6 +1361,12 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pairwise alignment statistical model</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that specifies a statistical model to use for scoring alignments (pairwise). Can take values from (sum p, poisson, kap).</obo:IAO_0000115>
+        <Class_001>don&#39;t think it is a data item.
+either subclass of derived information content entity, like representation model
+or more like the data transformation defined in OBI.
+if used in OBI, we can create it under textual entity or symbol
+All its members have no definitions yet.
+might treat as configuration datum too</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
@@ -1312,9 +1377,11 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000069">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pairwise alignment format</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pairwise alignment data format specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000124"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data format specification that specifies the format for the data produced as a result of pairwise sequence alignment.</obo:IAO_0000115>
+        <Class_001>change label
+any example of this data format?</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
@@ -1328,9 +1395,13 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low complexity sequence filter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000071"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sequence filter to process the query sequence, such that the low compexity regions in the sequence are filterted out before performing the search as low complexity regions tend to give a false estimate of the score.</obo:IAO_0000115>
+        <Class_001>In this case, does filter refer to specific algorithm or some data set? If the first, we&#39;d change its parent class to textual entity.
+
+All its members, seg, xun, etc. need textual definition.
+These are filters for protein, need to be specified</Class_001>
+        <obo:IAO_0000119>http://www.ebi.ac.uk/Tools/sss/wublast/help/index-protein.html#filter</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1342,6 +1413,10 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item which is a filter that processes the query sequence to remove the undesired portions of it before further processing.</obo:IAO_0000115>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
+        <Class_001>Filter looks like some algorithm rather than data item
+What does &#39; remove the undesired portions of it before further processing&#39; mean? Does it always mean alignment? If so, need say it in the definition.
+
+suggest change label to &#39;sequence filtering algorithm identifier&#39;, be subclass of &#39;algorithm identifier&#39;</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -1354,6 +1429,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include filtered</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that specifies whether or not to show in the output file the query sequence used for the search, post filtering. Filtering here refers to masking of low complexity regions.</obo:IAO_0000115>
+        <Class_001>Term label is not good.
+include filtered value/sign</Class_001>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
@@ -1367,6 +1444,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum number of match scores</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A measurement datum that specifies the maximum number of match scores displayed in the output.</obo:IAO_0000115>
+        <Class_001>Don&#39;t think it is measurement datum. didn&#39;t get from a measurment process. 
+suggest change to data item</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
@@ -1381,6 +1460,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that defines the range of query sequence to use for search.</obo:IAO_0000115>
         <obo:IAO_0000116>NCBIBlast Web service documentation</obo:IAO_0000116>
+        <Class_001>is it number like 0-999? 
+It might be nice to add value or data in the label</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -1396,6 +1477,8 @@
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <Class_001>Don&#39;t think it is measurement datum. didn&#39;t get from a measurment process. 
+suggest change to data item</Class_001>
     </owl:Class>
     
 
@@ -1403,12 +1486,15 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000076 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000076">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene strand specifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence strand specifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that specifies the DNA/RNA strand, upper, lower or both to be considered in alignment.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
+        <Class_001>change label, gene -&gt; sequence. Not all input are gene but it is sequence. different concept
+change parent from data item to textual entity
+All its individuals need textual defintions</Class_001>
     </owl:Class>
     
 
@@ -1418,9 +1504,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000077">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dropoff score</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that determines the minimum allowable score for a sequence to be matched after which the algorithm gives up on alligning that sequence.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that determines the minimum allowable score for a sequence to be matched after which the algorithm gives up on aligning that sequence.</obo:IAO_0000115>
         <obo:IAO_0000119>NCBIBlast Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <Class_001>check textual definition. hard to understand</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
@@ -1431,8 +1518,16 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000078">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence dataset</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data set that specifies the names of molecular sequence databases.</obo:IAO_0000115>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <Class_001>Add axiom
+&#39;has part&#39; some &#39;sequence data&#39;</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -1447,6 +1542,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that specifies the measure that determines the order in which the sequences that matched the search criteria are displayed.</obo:IAO_0000115>
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>not sure whether it is a data item or not</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -1463,6 +1559,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <Class_001>good</Class_001>
         <obo:IAO_0000116>assign id</obo:IAO_0000116>
         <obo:IAO_0000119>OBI / ITPPR</obo:IAO_0000119>
         <obo:IAO_0000115>A sequence data item that is about sequence of amino acids which are linked by peptide bonds.</obo:IAO_0000115>
@@ -1479,6 +1576,9 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A symbol used to identifiy (uniquely for a particular web service) the output type.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115>WS annotations Group, UGA</obo:IAO_0000115>
+        <Class_001>Does it mean the identifer to a specific data fromat?
+If so, need to update the label and definition.
+and Does it denote some data format specification?</Class_001>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
     </owl:Class>
     
@@ -1493,6 +1593,9 @@
         <obo:IAO_0000119>WUBlast Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <Class_001>Do we need to rename label like:
+&quot;sequence alignment expectation value&quot; for clarification
+otherwise, it can be any kind of expectation value</Class_001>
     </owl:Class>
     
 
@@ -1504,14 +1607,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000158"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000148"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000172"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000172"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000148"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1521,9 +1624,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000116>assign id</obo:IAO_0000116>
+        <Class_001>fine</Class_001>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
-        <obo:IAO_0000115>A  &#39;retrieve web service execution result&#39; that retrives the outcome of a signal peptide prediction process given a unique web service execution identifier.</obo:IAO_0000115>
+        <obo:IAO_0000115>A  retrieve web service execution result that retrives the outcome of a signal peptide prediction process given a unique web service execution identifier.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1542,13 +1645,121 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000077"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000064"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000079"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000069"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000095"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1565,44 +1776,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000068"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000069"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000429"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1630,85 +1805,17 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000082"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000095"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000075"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000079"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000024"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000064"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A web service execution that performs local pairwise sequence alignment to search a database for similar sequences.</obo:IAO_0000115>
+        <obo:IAO_0000116>It is geting inferre as a Sequence alignment data Transformation is that what we want</obo:IAO_0000116>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <Class_001>Axiom &#39;is part of&#39; only &#39;web service&#39;
+Does it apply to all web service execution or only &#39;BLAST execution&#39;?
+Anser to editor note
+It&#39;s fine. Cannot we say BLAST execution not sequence analysis?</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000117>It is geting inferre as a Sequence alignment data Transformation is that what we want</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1719,7 +1826,8 @@
         <rdfs:label>signal peptide prediction algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000154"/>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
-        <obo:IAO_0000116>Assign ID</obo:IAO_0000116>
+        <Class_001>Please check textual definition
+name of its parent</Class_001>
         <obo:IAO_0000115>A protein signature prediction method that serves as a prediction model to predict the location of signal peptides in a protein sequence.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
@@ -1734,17 +1842,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000074"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000074"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data item that is as an outcome of protein signature prediction process.</obo:IAO_0000115>
         <obo:IAO_0000119>Interproscan Documentation</obo:IAO_0000119>
+        <Class_001>Is it data or dataset?
+better add datum/dataset in the term label</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>assign ids</obo:IAO_0000116>
     </owl:Class>
@@ -1763,6 +1873,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLAST (Basic Local Alignment Search Tool), a pairwise sequence alignment algorithm is a heuristic search algorithm for comparing primary biological sequence information, such as the amino-acid or nucleotides sequences with a database of sequences, and identify sequences that resemble the query sequence above a certain threshold.</obo:IAO_0000115>
+        <Class_001>suggest to remove the last axiom since it can be executed in several different processes</Class_001>
         <obo:IAO_0000119>Wikipedia: BLAST</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
@@ -1782,6 +1893,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data transformation process that attempts to align two molecular sequences in order to study the equivalence between sites of molecular sequences including nucleic acid and protein sequence.</obo:IAO_0000115>
+        <Class_001>make it as defined class?</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:OBIws_0000165>yes</obo:OBIws_0000165>
         <obo:IAO_0000119>EDAM: alignment &amp; WS Annotations Group, UGA</obo:IAO_0000119>
@@ -1804,6 +1916,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pairwise sequence alignment data transformation that attempts to align two molecular sequences considering only parts of the sequences in order to study the equivalence between sites of molecular sequences including nucleic acid and protein sequence.</obo:IAO_0000115>
         <obo:IAO_0000118>local pairwise sequence alignment </obo:IAO_0000118>
+        <Class_001>Does it has input &#39;sequence dataset&#39;?</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>EDAM: alignment &amp; WS Annotations Group, UGA</obo:IAO_0000119>
@@ -1830,9 +1943,10 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000093 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000093">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">check web service execution objective</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">check web service execution status objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An objective specification that describes the goal of fetching the status of a web service execution.</obo:IAO_0000115>
+        <Class_001>add &#39;status&#39; in the label</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:OBIws_0000165>yes</obo:OBIws_0000165>
@@ -1846,8 +1960,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000094">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unmodeled term</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A textual Entity that describes terms in the WSDL that are not modeled in the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A textual entity that describes terms in the WSDL that are not modeled in the ontology.</obo:IAO_0000115>
         <obo:IAO_0000114>WS Annotations Group UGA</obo:IAO_0000114>
+        <Class_001>is any better word than &#39;modeled&#39;?</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
     </owl:Class>
@@ -1863,6 +1978,7 @@
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>NCBIBlast Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <Class_001>Does it have more than one number?</Class_001>
     </owl:Class>
     
 
@@ -1880,18 +1996,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000064"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
@@ -1903,9 +2007,12 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A local pairwise sequence alignment data transformation that performs pairwise sequence alignment to search sequence databases for similar sequences.</obo:IAO_0000115>
         <obo:IAO_0000118>BLAST analysis</obo:IAO_0000118>
-        <obo:IAO_0000119>Documentation for BLAST at NCBI</obo:IAO_0000119>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
+        <obo:IAO_0000119>Documentation for BLAST at NCBI</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>remove axioms defined in its super classes
+one question:
+Is there any local pairwise sequence alignment not BLAST?</Class_001>
     </owl:Class>
     
 
@@ -1914,15 +2021,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000097">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence identifier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A symbol that serves as an identifier for a molecular sequence or for an entry from a molecular sequence database.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A CRID symbol that serves as an identifier for a molecular sequence or for an entry from a molecular sequence database.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDAM: sequence identifier</obo:IAO_0000119>
+        <Class_001>change parent from symbol -&gt; CRID symbol</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -1942,7 +2050,7 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000099 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000099">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">align gaps</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">align gap</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1953,7 +2061,12 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item which is boolean value that determines if the gapped areas in query sequence should be aligned in the process of sequence alignment or not.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>NCBIBlast Web service documentation</obo:IAO_0000119>
+        <Class_001>change label to &#39;align gap&#39; from &#39;align gaps&#39; since better use singular as Ontology label
+Not happy about the label, &#39;align gap value&#39; or &#39;align gap sign&#39;?</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>Why with axiom
+is about some &#39;pairwise sequence alignment data transformation&#39;?
+sugget remove it</Class_001>
     </owl:Class>
     
 
@@ -1963,6 +2076,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000100">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">matrix</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <Class_001>good</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>WS annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000119>Wikipedia: http://en.wikipedia.org/wiki/Matrix_%28mathematics%29</obo:IAO_0000119>
@@ -1976,6 +2090,18 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000101">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fetch sequences execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -1997,25 +2123,15 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000106"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A web service execution that retrives the sequence given the sequence identifier and the sequence database that has the sequence.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
-        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
+        <Class_001>logical defintion gave more information than its textual definition
+Do you want to say more?</Class_001>
     </owl:Class>
     
 
@@ -2025,12 +2141,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000102">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predict signal peptides</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000163"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000103"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -2050,7 +2160,29 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000161"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2059,16 +2191,13 @@
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identify protein signature execution that attempts to predict the presence and location of signal peptide cleavage sites in a protein sequence.</obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+        <Class_001>why defined
+&#39;is part of&#39; only &#39;web service&#39;
+but not in its parent class?</Class_001>
     </owl:Class>
     
 
@@ -2082,6 +2211,7 @@
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>fine</Class_001>
     </owl:Class>
     
 
@@ -2120,10 +2250,16 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000106">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence data format</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence data format specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data format specification for molecular sequence feature information.</obo:IAO_0000115>
         <obo:IAO_0000119>EDAM</obo:IAO_0000119>
+        <obo:IAO_0000118>sequence data format</obo:IAO_0000118>
+        <Class_001>Good.
+
+its member
+&#39;fasta&#39;, is it better to be all upper case?
+it has no definition yet.</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
@@ -2138,6 +2274,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An objective specification of retriving a sequence from a sequence database given the sequence identifier and the database that has the sequence.</obo:IAO_0000115>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>or retrieve sequences objective?</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -2146,7 +2283,7 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000108">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">annotation symbol</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_annotation symbol</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that specifies annotation symbols to appear on alignments for query and/or database.</obo:IAO_0000115>
         <rdfs:comment>Needs Work : March 19 2012 (alok)</rdfs:comment>
@@ -2157,7 +2294,7 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000109">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FASTA programs</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_FASTA programs</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FASTA suite program to use for search: fastf, fastm or fasts. Required.</obo:IAO_0000115>
     </owl:Class>
@@ -2180,6 +2317,8 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple HSPS display</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Display of multiple high-scoring alignments (HSPs) [Turn on/off the display of all significant alignments between query and library sequence.]</obo:IAO_0000115>
+        <Class_001>does it used in annotation?
+software execution setting datum</Class_001>
     </owl:Class>
     
 
@@ -2223,6 +2362,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data item that can be set as true or false to determine if the histogram is returned with the result of FASTA search. The histogram gives a qualitative view of how well the statistical theory fits the similarity scores calculated by the program.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>does it used in annotation?
+software execution setting datum</Class_001>
         <obo:IAO_0000119>FASTA Web service documentation</obo:IAO_0000119>
     </owl:Class>
     
@@ -2237,6 +2378,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2258,12 +2405,6 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pairwise sequence alignment data transformation that produces accurate alignments are carried out by using a dynamic programming method (Myers and Miller) to align every pair of sequences.</obo:IAO_0000115>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:OBIws_0000165>yes</obo:OBIws_0000165>
@@ -2282,57 +2423,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000021"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000034"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000049"/>
-                        </owl:unionOf>
-                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000018"/>
+                    </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000116"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000139"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2354,31 +2456,85 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000034"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000049"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000013"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000063"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000138"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000015"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000015"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000116"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000139"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000063"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
@@ -2399,6 +2555,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A matrix with equal number of rows and columns for which all the elements above the main diagonal have values equal to 0.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WS annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000119>Wikipedia: http://en.wikipedia.org/wiki/Matrix_%28mathematics%29</obo:IAO_0000119>
+        <Class_001>good</Class_001>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
     </owl:Class>
     
@@ -2442,6 +2599,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data set that is produced as the output of some sequence aligment process. </obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>I think it is the subclass of sequence data set
+with is encoded in sequence alignment data format specifcation</Class_001>
         <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
     </owl:Class>
     
@@ -2459,9 +2618,11 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000124 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000124">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence alignment format</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence alignment data format specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data format specification that specifies the data format for the outcome of sequence alignment (pairwise or multiple) process.</obo:IAO_0000115>
+        <Class_001>change label
+any example of this data format?</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
@@ -2482,7 +2643,7 @@
     <!-- http://purl.obolibrary.org/obo/OBIws_0000126 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000126">
-        <rdfs:label xml:lang="en">multiple sequence alignment format</rdfs:label>
+        <rdfs:label xml:lang="en">multiple sequence alignment data format specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000124"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2490,6 +2651,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <Class_001>change label
+any example of this data format?</Class_001>
         <obo:IAO_0000115 xml:lang="en">A data format specification that specifies the format for the data produced as a result of multiple sequence alignment.</obo:IAO_0000115>
         <obo:IAO_0000119>WS Annotations Group, UGA</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
@@ -2517,6 +2680,10 @@
         <obo:IAO_0000115 xml:lang="en">A data item that designates the order in which sequences appear in a final alignment. If ALIGNED option is chosen, the output order will be the order in which the sequences were aligned (from the guide tree/dendrogram). If INPUT option is chosen, the output will be in the same order as the input sequences.</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>it is not data item
+might better defined as &#39;symbol&#39;
+label confused, need to improve
+bow about add &#39;option&#39; in the label?</Class_001>
     </owl:Class>
     
 
@@ -2544,11 +2711,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000133">
         <rdfs:label xml:lang="en">web service execution status</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
         <obo:IAO_0000118>job status</obo:IAO_0000118>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A symbol that is used to specify the status of a web service execution. It usually takes one of following values - DONE, ERROR, NOT_FOUND,PENDING, RUNNING</obo:IAO_0000115>
+        <Class_001>It is not a data item.
+change to symbol</Class_001>
         <obo:IAO_0000119>ClustalW Web service Documentation www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">A data item that is used to specify the status of a web service execution. It usually takes one of following values - DONE, ERROR, NOT_FOUND,PENDING, RUNNING</obo:IAO_0000115>
         <obo:IAO_0000117>WS Annotations Group, UGA</obo:IAO_0000117>
         <obo:OBIws_0000165>yes</obo:OBIws_0000165>
     </owl:Class>
@@ -2560,12 +2729,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000139">
         <rdfs:label xml:lang="en">fast pairwise sequence alignment data transformation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000090"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -2581,21 +2744,29 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000057"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000061"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pairwise sequence alignment data transformation that produces Fast/Approximate alignments using the method of Wilbur and Lipman (1983) and may be more suitable for sequences longer than 1000 residues.</obo:IAO_0000115>
+        <Class_001>question:
+fast/slow have different input parameters, right?</Class_001>
         <obo:OBIws_0000165>yes</obo:OBIws_0000165>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>ClustalW Documentation</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
-        <rdfs:comment>are local, fast and slow pairwise aligments disjoint</rdfs:comment>
+        <obo:IAO_0000116>are local, fast and slow pairwise aligments disjoint</obo:IAO_0000116>
         <obo:IAO_0000118>fast pairwise sequence alignment </obo:IAO_0000118>
     </owl:Class>
     
@@ -2606,8 +2777,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000147">
         <rdfs:label>filter sequence data objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <obo:IAO_0000116>Assign Id
-Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>not very like the label of the term.
+It is easy to be confused and think it related to the term &#39;sequence filter&#39;</Class_001>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115>An objective specification that describes the goal of filtering sequence data depending on their similarity score to a specified sequence and expectation value.</obo:IAO_0000115>
@@ -2624,6 +2795,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000115>A retrieve web service execution result objective that describes the goal of retrieving the result of an operation to predict  the presence and location of signal peptide cleavage sites in amino acid sequences.</obo:IAO_0000115>
+        <Class_001>good</Class_001>
     </owl:Class>
     
 
@@ -2636,7 +2808,13 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000119>FASTA Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000116>Ready for OBI-WS : v1.0</obo:IAO_0000116>
+        <Class_001>does it used in annotation?
+software execution setting datum</Class_001>
         <obo:IAO_0000115>A data item that can be set as true or false to detrimine if multiple high scoring alignments have to be displayed or not.</obo:IAO_0000115>
+        <Class_001>does it used in annotation?
+more like subclass of setting value
+same for other boolean value, need to check
+should be same as device setting, it is program setting.</Class_001>
     </owl:Class>
     
 
@@ -2650,7 +2828,6 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000115>An objective specification that describes the goal of retrieving the supported output data formats for a particular web service execution.</obo:IAO_0000115>
         <obo:OBIws_0000165>yes</obo:OBIws_0000165>
         <obo:IAO_0000119>ClustalW Web service Documentation : www.ebi.ac.uk/Tools/webservices/services/msa/clustalw2_soapa</obo:IAO_0000119>
-        <obo:IAO_0000116>assign ids</obo:IAO_0000116>
     </owl:Class>
     
 
@@ -2660,9 +2837,9 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000152">
         <rdfs:label>base64 encoding</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000007"/>
+        <Class_001>how about add &#39;specification&#39; at the end of the label and put current one as alternative term if need?</Class_001>
         <obo:IAO_0000115>A MIME type specification which represents an encoding scheme that represent binary data in an ASCII string format by translating it into a radix-64 representation.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Base64</obo:IAO_0000119>
-        <obo:IAO_0000116>assign id</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -2671,8 +2848,9 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBIws_0000154 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000154">
-        <rdfs:label>protein signature recognition method</rdfs:label>
+        <rdfs:label>protein signature recognition algorithm</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
+        <Class_001>how about change method -&gt; algorithm?</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115>An algorithm or a predictive model to predict the presence of a particular protein signature.</obo:IAO_0000115>
         <obo:IAO_0000119>EBI online cources : http://www.ebi.ac.uk/training/online/course/introduction-protein-classification-ebi/what-are-protein-signatures</obo:IAO_0000119>
@@ -2684,7 +2862,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBIws_0000155 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000155">
-        <rdfs:label>FASTA score format</rdfs:label>
+        <rdfs:label>obsolete_FASTA score format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115>A data item that species a format in which the scores table in FASTA output is represented.</obo:IAO_0000115>
     </owl:Class>
@@ -2702,6 +2880,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000171"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <Class_001>good</Class_001>
         <obo:IAO_0000115>A  web service execution that fetches the outcome of some previously executed web service operation (execution) given an execution indetifier that is unique for that particular web service.</obo:IAO_0000115>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
         <obo:IAO_0000116>assign ids</obo:IAO_0000116>
@@ -2718,6 +2897,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000111>Ready for OBI-WS : v1.0</obo:IAO_0000111>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
+        <Class_001>better describe what score it means in the defintion</Class_001>
         <obo:IAO_0000116>ITPPR</obo:IAO_0000116>
         <obo:IAO_0000115>A data item which is a score assigned for a signal peptide region predicted by a signal peptide prediction algorithm.</obo:IAO_0000115>
     </owl:Class>
@@ -2727,11 +2907,11 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBIws_0000161 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000161">
-        <rdfs:label>signal peptide prediction threshold</rdfs:label>
+        <rdfs:label>signal peptide prediction threshold value</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
         <obo:IAO_0000115>A quantitative confidance value that acts as a threshold score to determine if the sequence pattern in consideration is a signal peptide or not.</obo:IAO_0000115>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
-        <obo:IAO_0000116>Assign ID</obo:IAO_0000116>
+        <Class_001>add value in the label</Class_001>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
     
@@ -2742,6 +2922,18 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000163">
         <rdfs:label>identify protein signature execution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000170"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -2764,21 +2956,9 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000170"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000080"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>A web service execution that tries to locate occurrence of different known protein signatures like signal peptides in a protein sequence. </obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
-        <obo:IAO_0000116>Assign IDs</obo:IAO_0000116>
+        <Class_001>good</Class_001>
         <obo:IAO_0000119>InterPro Documnentation at EBI : ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/FAQs.html</obo:IAO_0000119>
     </owl:Class>
     
@@ -2790,6 +2970,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <rdfs:label>signal peptides found</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000119>Signalp Web service documentation / ITPPR</obo:IAO_0000119>
+        <Class_001>need better label</Class_001>
         <obo:IAO_0000115>A data item which is the outcome of predict signal peptide cleavage sites execution that specifies if a signal peptide chain is found or not. </obo:IAO_0000115>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
     </owl:Class>
@@ -2804,6 +2985,8 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Comma-separated_values</obo:IAO_0000119>
         <obo:IAO_0000116>assign id</obo:IAO_0000116>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
+        <Class_001>should it be the instance of data format specification?
+prefer label: &quot;CSV&#39;</Class_001>
         <obo:IAO_0000115>A data format specification that consists of any number of records and each record separated by a comma (&#39;,&#39;).</obo:IAO_0000115>
     </owl:Class>
     
@@ -2814,8 +2997,8 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000170">
         <rdfs:label>identify protein signature objective</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <Class_001>fine</Class_001>
         <obo:IAO_0000119>InterproScan Documentation at EBI</obo:IAO_0000119>
-        <obo:IAO_0000117>Assign Ids</obo:IAO_0000117>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115>An objective specification that describes the goal of identifying protein signatures  in a protein sequence.</obo:IAO_0000115>
     </owl:Class>
@@ -2831,6 +3014,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <obo:IAO_0000119>ITPPR</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115>An objective specification that describes the goal of retrieving the outcome of some previously executed web service execution.</obo:IAO_0000115>
+        <Class_001>good</Class_001>
     </owl:Class>
     
 
@@ -2843,19 +3027,21 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000159"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000167"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000167"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116>assign id</obo:IAO_0000116>
         <obo:IAO_0000119>Signalp Web service documentation</obo:IAO_0000119>
         <obo:IAO_0000117>ITPPR</obo:IAO_0000117>
         <obo:IAO_0000115>A data item that includes the outcome and all the meta data  of signal peptide clevage sites prediction process.</obo:IAO_0000115>
+        <Class_001>Is it datum or dataset?
+better add datum/dataset in the term label</Class_001>
     </owl:Class>
     
 
@@ -2898,7 +3084,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000443">
         <rdfs:label xml:lang="en">polymer_attribute</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000412>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/so.owl</obo:IAO_0000412>
         <obo:IAO_0000115 xml:lang="en">An attribute to describe the kind of biological sequence.</obo:IAO_0000115>
     </owl:Class>
     
@@ -3045,6 +3231,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBIws_0000142">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000128"/>
+        <rdfs:label>aligned</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3062,6 +3249,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBIws_0000144">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000076"/>
+        <rdfs:label>bottom</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3070,6 +3258,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBIws_0000145">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000128"/>
+        <rdfs:label>input</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3124,6 +3313,7 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBIws_0000160">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000076"/>
+        <rdfs:label>top</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3184,5 +3374,5 @@ Ready for OBI-WS : v1.0</obo:IAO_0000116>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.22702) http://owlapi.sourceforge.net -->
 
