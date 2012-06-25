@@ -1,0 +1,43 @@
+Old IRI	New ID	Label	Term Type
+http://purl.obolibrary.org/obo/obi/webService.owl#both	http://purl.obolibrary.org/obo/OBIws_0000052	both	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#protein_sequence_data	http://purl.obolibrary.org/obo/OBIws_0000080	protein sequence data	Class
+http://purl.obolibrary.org/obo/webService.owl#retrieve_signalP_result_execution_	http://purl.obolibrary.org/obo/OBIws_0000083	retrieve signal peptide result	Class
+http://purl.obolibrary.org/obo/webService.owl#prediction_model	http://purl.obolibrary.org/obo/OBIws_0000085	signal peptide prediction algorithm	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#predicted_protein_signature	http://purl.obolibrary.org/obo/OBIws_0000086	predicted protein signatures	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#Blastp	http://purl.obolibrary.org/obo/OBIws_0000087	BLASTp	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#Blastx	http://purl.obolibrary.org/obo/OBIws_0000089	BLASTx	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#Blastn	http://purl.obolibrary.org/obo/OBIws_0000140	BLASTn	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#fasta	http://purl.obolibrary.org/obo/OBIws_0000141	fasta	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#ALIGNED	http://purl.obolibrary.org/obo/OBIws_0000142	<http://purl.obolibrary.org/obo/OBIws_0000142>	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#poisson	http://purl.obolibrary.org/obo/OBIws_0000143	poisson	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#bottom	http://purl.obolibrary.org/obo/OBIws_0000144	<http://purl.obolibrary.org/obo/OBIws_0000144>	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#INPUT	http://purl.obolibrary.org/obo/OBIws_0000145	<http://purl.obolibrary.org/obo/OBIws_0000145>	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#kap	http://purl.obolibrary.org/obo/OBIws_0000146	kap	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#filter_sequence_data_objective	http://purl.obolibrary.org/obo/OBIws_0000147	filter sequence data objective	Class
+http://purl.obolibrary.org/obo/webService.owl#retrieve_signalP_result_objective	http://purl.obolibrary.org/obo/OBIws_0000148	retrieve signal peptide result objective	Class
+http://purl.obolibrary.org/obo/webService.owl#display_multiple_HSPs	http://purl.obolibrary.org/obo/OBIws_0000149	display multiple HSPs	Class
+http://purl.obolibrary.org/obo/webService.owl#get_supported_output_data_format_objective	http://purl.obolibrary.org/obo/OBIws_0000150	retrieve supported output data format objective	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#sump	http://purl.obolibrary.org/obo/OBIws_0000151	sump	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#base64_encoding	http://purl.obolibrary.org/obo/OBIws_0000152	base64 encoding	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#high	http://purl.obolibrary.org/obo/OBIws_0000153	high	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#protein_signature_recognition_method	http://purl.obolibrary.org/obo/OBIws_0000154	protein signature recognition method	Class
+http://purl.obolibrary.org/obo/webService.owl#FASTA_score_format	http://purl.obolibrary.org/obo/OBIws_0000155	FASTA score format	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#seg+xnu	http://purl.obolibrary.org/obo/OBIws_0000156	seg+xnu	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#tBlastn	http://purl.obolibrary.org/obo/OBIws_0000157	tBLASTn	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#retrieve_web_service_execution_result	http://purl.obolibrary.org/obo/OBIws_0000158	retrieve web service execution result	Class
+http://purl.obolibrary.org/obo/webService.owl#signal_peptide_score	http://purl.obolibrary.org/obo/OBIws_0000159	signal peptide prediction score	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#top	http://purl.obolibrary.org/obo/OBIws_0000160	<http://purl.obolibrary.org/obo/OBIws_0000160>	NamedIndividual
+http://purl.obolibrary.org/obo/webService.owl#signal_peptide_prediction_threshold	http://purl.obolibrary.org/obo/OBIws_0000161	signal peptide prediction threshold	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#low	http://purl.obolibrary.org/obo/OBIws_0000162	low	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#identify_protein_signature	http://purl.obolibrary.org/obo/OBIws_0000163	identify protein signature execution	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#seg	http://purl.obolibrary.org/obo/OBIws_0000164	seg	NamedIndividual
+http://purl.obolibrary.org/obo/webService.owl#WS_term_Reviewed	http://purl.obolibrary.org/obo/OBIws_0000165	<http://purl.obolibrary.org/obo/OBIws_0000165>	AnnotationProperty
+http://purl.obolibrary.org/obo/obi/webService.owl#xnu	http://purl.obolibrary.org/obo/OBIws_0000166	xnu	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#signal_peptides_found	http://purl.obolibrary.org/obo/OBIws_0000167	signal peptides found	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#medium	http://purl.obolibrary.org/obo/OBIws_0000168	medium	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#comma_separated_values	http://purl.obolibrary.org/obo/OBIws_0000169	comma separated values	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#identify_protein_signature_objective	http://purl.obolibrary.org/obo/OBIws_0000170	identify protein signature objective	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#retrieve_web_service_execution_result_objective	http://purl.obolibrary.org/obo/OBIws_0000171	retrieve web service execution result objective	Class
+http://purl.obolibrary.org/obo/webService.owl#predicted_signal_peptide_cleavage_sites_outcome	http://purl.obolibrary.org/obo/OBIws_0000172	predicted signal peptide cleavage sites	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#tBlastx	http://purl.obolibrary.org/obo/OBIws_0000173	tBLASTx	NamedIndividual
+http://purl.obolibrary.org/obo/obi/webService.owl#normal	http://purl.obolibrary.org/obo/OBIws_0000174	normal	NamedIndividual
