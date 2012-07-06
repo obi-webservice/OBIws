@@ -3,18 +3,24 @@
      xml:base="http://purl.obolibrary.org/obo/obi/webService.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:webService="http://purl.obolibrary.org/obo/webService.owl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:seg="http://purl.obolibrary.org/obo/obi/webService.owl#seg+"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obi/webService.owl">
+        <dc:creator xml:lang="en">Alok Dhamanaskar</dc:creator>
+        <dc:contributor xml:lang="en">Chaitanya Guttula</dc:contributor>
+        <dc:contributor xml:lang="en">Jessie Kissinger </dc:contributor>
+        <dc:contributor xml:lang="en">John Miller</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
+        <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:subject xml:lang="en">An ontology for the annotation of bioinformatics web services.</dc:subject>
+        <dc:description xml:lang="en">An ontology that extends the Ontology for Biomedical Investigations (OBI) to build an Ontology that supports consistent annotation of Bioinformatics Web services.</dc:description>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Ontology>
