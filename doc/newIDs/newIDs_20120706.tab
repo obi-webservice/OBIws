@@ -1,0 +1,11 @@
+Old IRI	New ID	Label	Term Type
+http://purl.obolibrary.org/obo/obi/webService.owl#software_execution_configuration_parameter	http://purl.obolibrary.org/obo/OBIws_0000165	software execution setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#phylip_execution_identifier	http://purl.obolibrary.org/obo/OBIws_0000175	phylip execution identifier	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#construct_phylogenetic_trees_objective	http://purl.obolibrary.org/obo/OBIws_0000176	construct phylogenetic trees objective	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#consensus_tree_construction_method	http://purl.obolibrary.org/obo/OBIws_0000177	consensus tree construction algorithm	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#phylogenetic_tree	http://purl.obolibrary.org/obo/OBIws_0000178	phylogenetic tree	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#amino_acid_replacement_model	http://purl.obolibrary.org/obo/OBIws_0000179	amino acid replacement model	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#compute_protein_distance_matrix_objective	http://purl.obolibrary.org/obo/OBIws_0000180	compute protein distance matrix objective	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#consensus_tree	http://purl.obolibrary.org/obo/OBIws_0000181	consensus tree	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#genetic_code	http://purl.obolibrary.org/obo/OBIws_0000182	genetic code	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#construct_consensus_trees_execution	http://purl.obolibrary.org/obo/OBIws_0000183	construct consensus trees execution	Class
