@@ -1,0 +1,15 @@
+Old IRI	New ID	Label	Term Type
+http://purl.obolibrary.org/obo/obi/webService.owl#transcript_sequence_data	http://purl.obolibrary.org/obo/OBIws_0000184	transcript sequence data	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#minimum_signalp_D_score	http://purl.obolibrary.org/obo/OBIws_0000185	minimum signalp D score setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#minimum_signalp_sum_score	http://purl.obolibrary.org/obo/OBIws_0000186	minimum signalp sum score setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#minimum_signalp_probability	http://purl.obolibrary.org/obo/OBIws_0000187	minimum signalp probability setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#any_or_all_signal	http://purl.obolibrary.org/obo/OBIws_0000188	any or all signalp setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_gene_objective	http://purl.obolibrary.org/obo/OBIws_0000189	find genes objective	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_genes_by_taxonomy_execution	http://purl.obolibrary.org/obo/OBIws_0000190	find genes by taxonomy execution	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#gene_locus_tag	http://purl.obolibrary.org/obo/OBIws_0000191	gene locus tag	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#RNA_sequence_data	http://purl.obolibrary.org/obo/OBIws_0000192	RNA sequence data	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#coding_sequence_data	http://purl.obolibrary.org/obo/OBIws_0000193	coding sequence data	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#protein_sequence_length	http://purl.obolibrary.org/obo/OBIws_0000194	protein sequence length	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_genes_using_signal_peptide	http://purl.obolibrary.org/obo/OBIws_0000195	find genes using signal peptide execution	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#genomic_location_of_gene	http://purl.obolibrary.org/obo/OBIws_0000196	genomic location of gene	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_genes_by_locus_tag_execution	http://purl.obolibrary.org/obo/OBIws_0000197	find genes by locus tag execution	Class
