@@ -1,0 +1,12 @@
+Old IRI	New ID	Label	Term Type
+http://purl.obolibrary.org/obo/obi/webService.owl#maximum_isoelectric_point_setting_secification	http://purl.obolibrary.org/obo/OBIws_0000198	maximum isoelectric point setting secification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#minimum_number_of_predicted_transmembrane_domains_setting_specification	http://purl.obolibrary.org/obo/OBIws_0000199	minimum number of predicted transmembrane domains setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#minimum_isoelectric_point_setting_specification	http://purl.obolibrary.org/obo/OBIws_0000200	minimum isoelectric point setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#epitop_confidence_setting_specification	http://purl.obolibrary.org/obo/OBIws_0000201	epitop confidence setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_genes_by_transmembrane_domain_execution	http://purl.obolibrary.org/obo/OBIws_0000202	find genes by transmembrane domain execution	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_genes_with_epitopes_execution	http://purl.obolibrary.org/obo/OBIws_0000203	find genes with epitopes execution	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_genes_by_molecular_weight_execution	http://purl.obolibrary.org/obo/OBIws_0000204	find genes by molecular weight execution	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#minimum_molecular_weight_setting_specification	http://purl.obolibrary.org/obo/OBIws_0000205	minimum molecular weight setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#maximum_molecular_weight_setting_specification	http://purl.obolibrary.org/obo/OBIws_0000206	maximum molecular weight setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#maximum_number_of_predicted_transmembrane_domains_setting_specification	http://purl.obolibrary.org/obo/OBIws_0000207	maximum number of predicted transmembrane domains setting specification	Class
+http://purl.obolibrary.org/obo/obi/webService.owl#find_genes_by_isoelectric_point_execution	http://purl.obolibrary.org/obo/OBIws_0000208	find genes by isoelectric point execution	Class
