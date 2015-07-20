@@ -2,7 +2,7 @@
 
 The Bioinformatics Web Services ontology (OBIws) is an ontology that extends the Ontology for Biomedical Investigations (OBI) to build an Ontology that supports consistent annotation of Bioinformatics Web services. We also consider reuse of terms available from the EMBRACE Data And Methods (EDAM) ontology. 
 
-We follow a systematic methodology for enriching OBI with terms to support Web service Annotation. This process involves the design of ontology analysis diagrams for Web services and their subsequent analysis to discover terms that need to be added to the ontology. The methodology has been summarized in the paper [Enriching the Ontology for Biomedical Investigations (OBI) to Improve its Suitability for Web Service Annotations](http://cs.uga.edu/~jam/home/theses/guttula_thesis/radiantWeb/version3/ICBO_final.pdf)
+We follow a systematic methodology for enriching OBI with terms to support Web service Annotation. This process involves the design of ontology analysis diagrams for Web services and their subsequent analysis to discover terms that need to be added to the ontology. The methodology has been summarized in the paper: [Enriching the Ontology for Biomedical Investigations (OBI) to Improve its Suitability for Web Service Annotations](http://cs.uga.edu/~jam/home/theses/guttula_thesis/radiantWeb/version3/ICBO_final.pdf)
 
 Current OBIws ontology is focusing on sequence analysis web services. With developed patterns of modeling web services, OBIws can be extended easily to support annotations of different kind web services. Welcome to send your request for new terms to the [issue tracker](https://github.com/zhengj2007/obi-webservice/issues).  
 
@@ -25,6 +25,6 @@ http://purl.obolibrary.org/obo/obi/webService.owl
 The ontology can be viewed on Bioportal website:
 http://bioportal.bioontology.org/ontologies/3119
 
-All the Publications related to the project can be found [here](http://mango.ctegd.uga.edu/jkissingLab/SWS/publications.html here).
+All the Publications related to the project can be found [here](http://mango.ctegd.uga.edu/jkissingLab/SWS/publications.html).
 
 SAWSDL files annotated using the extended OBI ontology can be found on [our project](http://mango.ctegd.uga.edu/jkissingLab/SWS/services.html).
