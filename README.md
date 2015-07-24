@@ -10,7 +10,7 @@ Current OBIws ontology is focusing on sequence analysis web services. With devel
 
 - OBIws development version
   - Contains all the terms in the OBI ontology plus the web service terms added to it
-  - https://raw.githubusercontent.com/zhengj2007/obi-webservice/master/ontology/OBIws.owl (unstable)
+  - https://raw.githubusercontent.com/obi-webservice/obi-webservice/master/ontology/OBIws.owl (unstable)
   - Aavailable on the OntoBee.org: http://www.ontobee.org/browser/index.php?o=OBIws
 
 - OBIws release version
