@@ -4,7 +4,7 @@ The Bioinformatics Web Services ontology (OBIws) is an ontology that extends the
 
 We follow a systematic methodology for enriching OBI with terms to support Web service Annotation. This process involves the design of ontology analysis diagrams for Web services and their subsequent analysis to discover terms that need to be added to the ontology. The methodology has been summarized in the paper: [Enriching the Ontology for Biomedical Investigations (OBI) to Improve its Suitability for Web Service Annotations](http://cs.uga.edu/~jam/home/theses/guttula_thesis/radiantWeb/version3/ICBO_final.pdf)
 
-Current OBIws ontology is focusing on sequence analysis web services. With developed patterns of modeling web services, OBIws can be extended easily to support annotations of different kind web services. Welcome to send your request for new terms to the [issue tracker](https://github.com/zhengj2007/obi-webservice/issues).  
+Current OBIws ontology is focusing on sequence analysis web services. With developed patterns of modeling web services, OBIws can be extended easily to support annotations of different kind web services. Welcome to send your request for new terms to the [issue tracker](https://github.com/obi-webservice/obi-webservice/issues).  
 
 <b>Available Versions</b>
 
